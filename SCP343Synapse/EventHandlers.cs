@@ -122,11 +122,8 @@ namespace SCP343Synapse
                 Random r = new Random();
                 int SpawnChance = r.Next(0, 101);
                 if (SpawnChance <= Plugin.Config.SpawnChance)
-<<<<<<< HEAD
                     ev.Player.RoleID = 343;
-=======
                 Spawn343(ev.Player);
->>>>>>> 5ca6720c88b4e8cc989fc192bbabd997a04b896e
             }
         }
         public static void Spawn343(Player pp)
@@ -137,12 +134,9 @@ namespace SCP343Synapse
                 pp.SendBroadcast(5, Plugin.Config.Message);
                 pp.GodMode = true;
                 pp.Bypass = true;
-<<<<<<< HEAD
                 pp.Scp173Controller.IgnoredPlayers.Add(pp);
                 pp.RankName = "SCP-343";
-=======
                 pp.DisplayName = "SCP-343";
->>>>>>> 5ca6720c88b4e8cc989fc192bbabd997a04b896e
             }
         }
         public static void Kill343(Player pp)
